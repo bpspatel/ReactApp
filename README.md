@@ -1,6 +1,3 @@
-echo "# ReactApp" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/bpspatel/ReactApp.git
-git push -u origin master
+# This is React Shopping App.
+# run the react app use npm start
+#node version v10.17.0
