@@ -4,9 +4,10 @@ import Slider from './Component/Slider'
 import Header from './Component/Nav/Header';
 import SearchBar from './Component/Nav/SearchBar';
 import Navdiscountbar from './Component/Navdiscountbar/Navdiscountbar';
-import TrendContainer from './Component/Container/TrendContainer';
-import LatestProductContainer from './Component/Container/LatestProductContainer';
-import LookBookContainer from './Component/Container/LookBookContainer';
+import Mainsection from  './Component/Mainsection/Mainsection';
+import MainsectionSecond from  './Component/Mainsection/MainsectionSecond';
+import MainsectionThird from  './Component/Mainsection/MainsectionThird';
+import MainsectionFourth from  './Component/Mainsection/MainsectionFourth';
 import Footer from './Component/Footer/Footer'
 
 class App extends Component {
@@ -21,29 +22,12 @@ class App extends Component {
 				<Navdiscountbar/>
 				<section className="hero-slider">
 					<Slider />
-				</section>				
-			 	<TrendContainer/>
-			 	<LatestProductContainer/>
-				<LookBookContainer/>				
-				<div className="logo-section spad">
-					<div className="logo-items owl-carousel">
-						<div className="logo-item">
-							<img src="img/logos/logo-1.png" alt="" />
-						</div>
-						<div className="logo-item">
-							<img src="img/logos/logo-2.png" alt="" />
-						</div>
-						<div className="logo-item">
-							<img src="img/logos/logo-3.png" alt="" />
-						</div>
-						<div className="logo-item">
-							<img src="img/logos/logo-4.png" alt="" />
-						</div>
-						<div className="logo-item">
-							<img src="img/logos/logo-5.png" alt="" />
-						</div>
-					</div>
-				</div>
+				</section>
+				<Mainsection/>
+                <MainsectionSecond/>
+				<MainsectionThird/>
+				<MainsectionFourth/>		
+
 				<Footer/>
 			</div>
 		)
