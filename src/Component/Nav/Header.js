@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
 
@@ -24,17 +25,18 @@ class Navbar extends Component {
                         </div>
                         <nav className="main-menu mobile-menu">
                             <ul>
-                                <li><a className="active" href="./index.html">Home</a></li>
-                                <li><a href="./categories.html">Shop</a>
-                                    <ul className="sub-menu">
-                                        <li><a href="product-page.html">Product Page</a></li>
-                                        <li><a href="shopping-cart.html">Shopping Card</a></li>
-                                        <li><a href="check-out.html">Check out</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="./product-page.html">About</a></li>
-                                <li><a href="./check-out.html">Blog</a></li>
-                                <li><a href="./contact.html">Contact</a></li>
+                                <li><Link to={'/'} className="active"> Home </Link></li>                                
+                                <li>
+                                    <Link to={'/'} className="active"> Shop </Link>                                    
+                                     <ul className="sub-menu">
+                                         <li><a href="product-page.html">Product Page</a></li>
+                                         <li><a href="shopping-cart.html">Shopping Card</a></li>
+                                         <li><a href="check-out.html">Check out</a></li>
+                                     </ul>
+                                 </li>
+                                 <li><Link to={'/About'}>About</Link></li>
+                                 <li><a href="./check-out.html">Blog</a></li>
+                                 <li><Link to={'/Contact'}>Contact</Link></li>
                             </ul>
                         </nav>
                     </div>
